@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lounge.css" />
+        <link rel="stylesheet" href="location.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="main">
+            <div class="video-background">
+                <img src="ddp.jpeg" alt="" />
+            </div>
+            <div class="section">
+                <div class="title">
+                    <a href="location.html">대중교통</a>
+                    <a href="car.html">자동차</a>
+                    <a href="#">셔틀/단체버스</a>
+                </div>
+                <hr />
+                <div class="location-container">
+                    <div class="left">
+                        <div><img src="map.png" alt="" /></div>
+                        <div class="addr">B the B 찾아오는 길 (DDP 지하 2층)</div>
+                        <div><img src="image4.png" alt="" /></div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <p class="vehicle">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-bus-front"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3"
+                                    />
+                                    <path
+                                        d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1"
+                                    /></svg
+                                >&nbsp;자동차 이용 안내 Automobile
+                            </p>
+                            <p class="addr">
+                                흥인지문, 청계6가 방면에서 장충단로로 오는 경우
+                                <br />If coming from Heunginjimun or Cheonggye 6-ga direction to Jangchungdan-ro
+                            </p>
+                            <p>
+                                동대문역사문화공원 사거리에서 신당역, 충무아트홀 방면으로 좌회전 → 을지로 45길로 약 200m
+                                직진 → DDP 지하 주차장 진입 <br />
+                                <br />Turn left at Dongdaemun History and Culture Park intersection toward Sindang
+                                Station and Chungmu Art Hall → Go straight for about 200m on Eulji-ro 45-gil → Enter the
+                                DDP underground parking lot
+                            </p>
+                            <p class="addr gap">
+                                마장역, 흥인지문 방면에서 마장로로 오는 경우
+                                <br />
+                                If coming from Majang Station or Heunginjimun direction to Majang-ro
+                            </p>
+                            <p>
+                                DDP 패션몰이 보이면 좌회전 → 을지로 45길로 진입 → 약 300m 직진 후 DDP 지하주차장 진입<br /><br />
+
+                                Turn left when you see DDP Fashion Mall → Enter Euljiro 45-gil → Go straight for about
+                                300m and enter the DDP underground parking lot
+                            </p>
+                            <p class="addr gap">
+                                한남대교, 장충체육관 방면에서 장충단로로 오는 경우 <br />If coming from Hannam Bridge or
+                                Jangchung Gymnasium direction to Jangchungdan-ro
+                            </p>
+                            <p>
+                                광희동 사거리를 지나 동대문역사문화공원사거리에서 신당역, 충무아트홀 방면으로 우회전 →
+                                을지로 45길로 약 200m 직진 → DDP 지하 주차장 진입 <br /><br />Pass the Gwanghui-dong
+                                intersection and turn right at the Dongdaemun History and Culture Park intersection
+                                toward Sindang Station and Chungmu Art Hall → Go straight for about 200m on Euljiro
+                                45-gil → Enter DDP underground parking lot
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </body>
+</html>

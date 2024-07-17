@@ -1,0 +1,228 @@
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    height: 50vh; /* 원하는 높이로 설정 */
+    object-fit: cover; /* 이미지를 요소에 맞게 조정 */
+    object-position: top;
+    display: block;
+}
+.slider .slide {
+    position: relative;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 오버레이 */
+    pointer-events: none; /* 오버레이가 클릭을 막지 않도록 설정 */
+}
+.slider .content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.slider .content .title {
+    font-size:2rem;
+}
+
+.slider .content .desc {
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.slider .content .btn {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 30%;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.slider .content .btn:hover {
+    opacity: 0.7;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+}
+.slick-dots {
+    bottom: 15px !important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+.slick-dots li button:before {
+    color: white !important;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+    background: url('left-arrow.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+    background: url('right-arrow2.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+.section .list-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section .list-2 a {
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    margin: 0px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.section .list-2 .active {
+    background: black;
+    color: white;
+}
+.section .list-2 a:hover {
+    background: black;
+    color: white;
+}
+.brands-container {
+    display: flex;
+    padding-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+.brand-wrapper {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 15px);
+}
+
+@media (max-width: 1024px) {
+    .brand-wrapper {
+        width: calc(50% - 15px);
+    }
+    .section {
+        width: 100%;
+        padding: 80px 10px;
+    }
+}
+
+.brand-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner {
+    height: 215px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.brands {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.brands img {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 2px solid black;
+    object-fit: cover;
+    object-position: center;
+}
+.shop-info {
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.shop-info .link {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    background: #e1e1e1;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 4;
+    text-decoration: none;
+    color:black;
+
+    
+}
+.shop-info p:first-child {
+    font-size:1.5rem;
+    color:black;
+    font-weight: bold;
+    padding-top: 80px;
+}
+.shop-info p:nth-child(2) {
+    font-size:1rem;
+    color:black;
+    padding: 5px 0px;
+}
+
+
+.shop-info .link:hover {
+    background-color: gray;
+} 

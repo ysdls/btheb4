@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="stylesheet" href="detail.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="main">
+            <div class="slider">
+                <div><img src="comm/aro1.jpg" alt="Image 1" /></div>
+                <!-- <div><img src="comm/2308n_2.jpg" alt="Image 2" /></div>
+                <div><img src="comm/2308n_3.jpg" alt="Image 1" /></div> -->
+            </div>
+            <div class="text">
+                <div class="title">
+                    <p>BEAUTIFASHION LOUNGE</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="desc">
+                    <p>
+                        1. 프로그램 : 아로마테라피 숙면 클래스 일시 : 6월 7일(수) / 6월 15일(목) 15:00 ~ 17:00 체험 시간
+                        : 120분 참가 인원 : 회차당 10명 강사 : 서홍님 <br />
+                        2. 프로그램 : 반려동물과 나를 위한 샴푸바 만들기 클래스 일시 : 5월 13일(수) / 6월 10일(목) 11:00
+                        ~ 12:30 체험 시간 : 90분 참가 인원 : 회차당 12명 강사 : 버블브릭 <br />3. 프로그램 : 자녀와 함께
+                        자원순환 환경 클래스 일시 : 5월 12일(수) / 5월 26일(목) / 6월 9일(목) / 6월 16일(목) 15:00 ~ 16:
+                        20 체험 시간 : 80분 참가 인원 : 회차당 어린이 5명 (+ 학부모 1인 동반) 강사 : 아로마티카 ESG팀
+                        비용 : 무료
+                    </p>
+                    <!-- <br />
+                    <p>
+                        NEUROGLOW: Inner beauty that shines from within Experience the "Neuro Glow" lifestyle with
+                        beauty and healthy items from d'Alba'S signature ingredient, white truffle, and Veganery's main
+                        taste Shine Muscat.
+                    </p> -->
+                </div>
+            </div>
+            <div class="back">
+                <a href="brand.html">돌아가기</a>
+                <!-- <a href="https://dalba.co.kr/" target="_blank">기업홈페이지 바로가기</a> -->
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>

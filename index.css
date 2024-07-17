@@ -1,0 +1,362 @@
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    height: 70vh; /* 원하는 높이로 설정 */
+    object-fit: cover; /* 이미지를 요소에 맞게 조정 */
+    display: block;
+}
+.slider .slide {
+    position: relative;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 오버레이 */
+    pointer-events: none; /* 오버레이가 클릭을 막지 않도록 설정 */
+}
+.slider .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.slider .content .title {
+    font-size:2rem;
+    text-transform: uppercase;
+}
+
+.slider .content .desc {
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.slider .content .btn {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 30%;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.slider .content .btn:hover {
+    opacity: 0.7;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+}
+.slick-dots {
+    bottom: 15px !important;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+.slick-dots li button:before {
+    color: white !important;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+    background: url('left-arrow.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+    background: url('right-arrow2.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+
+#backtitle {
+    position: relative;
+    background: url('posters.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+#backtitle  .content {
+    position: relative;
+    z-index: 50;
+    color: white;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 40px;
+}
+#backtitle  .content .desc {
+    height: 200px;
+    background: rgb(255 255 255 / 70%);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: left;
+}
+#backtitle  .content h1 {
+    font-size:2.5rem;
+    text-align: center;
+    width: 50%;
+}
+#backtitle  .content p {
+    line-height: 2;
+    width: 50%;
+}
+#backtitle .content button {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+#backtitle .content button:hover {
+    background: white;
+    color: black;
+}
+
+.section {
+    background-color: white;
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.section .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;;
+}
+.section .line {
+    border: solid 0.5px black;
+    width: 100%;
+}
+.section .sub-title p:first-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.section .sub-title p:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* 카드 간의 간격 추가 */
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color:black;
+    padding: 10px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background: black;
+}
+.username {
+    font-weight: bold;
+}
+.description {
+    padding: 10px;
+    max-height: 150px; /* Approx. 3 lines of text */
+    overflow: hidden;
+    position: relative;
+    color:black;
+}
+.description::after {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    padding: 0 5px;
+    display: none;
+}
+.notice-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #f0f0f0;
+}
+.notice-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    /* border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.notice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    animation: slideUp 4s ease-in-out infinite;
+}
+
+.section-box {
+    display: flex;
+    justify-content: space-between;
+}
+.section-box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.section-box img {
+    margin-left: 10px;
+}
+.notice-section {
+    width: 50%;
+    border-right: solid 1px #000;
+    padding: 80px 0px 0px 0px;
+    margin-top: 20px;
+}
+.location-section {
+    width: 50%;
+    padding: 80px 0px 0px 80px;
+    margin-top: 20px;
+}
+.notice-section div , .location-section div {
+    padding: 5px 0px 5px 0px;
+}
+.box-title {
+    margin-bottom: 15px;
+}
+.box-content span:first-child {
+    font-weight: 700;
+    margin-right: 20px;
+}
+.box-content span:last-child {
+    font-weight: 300;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    10%, 90% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .views1,.views2, .views3, .views4, .views5 {
+        display: none;
+    }
+}
+@media (max-width: 1320px) {
+    .views1,.views2, .views3, .views4 {
+        display: none;
+    }
+}
+@media (max-width: 1630px) {
+    .views1,.views2, .views3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1940px) {
+    .views2,.views1 {
+        display: none;
+    }
+}
+
+@media (max-width: 2330px) {
+    .views1 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .views1,.views2, .views3, .views4, .views5 {
+        display: none;
+    }
+
+    .section {
+        padding: 10px;
+    }
+    .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(100% - 10px); /* 두 개씩 보이게 하고 간격 조절 */
+        margin-bottom: 10px;
+    }
+
+    .notice {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

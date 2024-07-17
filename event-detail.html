@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lounge.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- <div class="overlay"></div> -->
+
+        <div class="main">
+            <div class="video-background">
+                <img src="media-cube.jpg" alt="" />
+            </div>
+            <div class="section">
+                <div class="list-2">
+                    <h1>B the B에 방문하셔서 chi 이벤트에 도전해보세요!</h1>
+                </div>
+                <hr />
+                <div class="container-detail">
+                    <div class="wapper">
+                        <img src="eee.jpeg" class="full-img" alt="Event Image 1" />
+                        <div class="detail-content">
+                            <div>장소 : 브랜드 라운지<br />기간 : 2024.4.30 ~ 2024.6.30</div>
+                            <p>
+                                인스타그램 계정 팔로우 또는 카카오톡 채널 추가 시,<br />
+                                비건 핸드워시 (300ml) 제공
+                            </p>
+                        </div>
+                        <div class="back">
+                            <a href="event.html">목록으로</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>

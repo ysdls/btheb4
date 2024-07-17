@@ -1,0 +1,86 @@
+.main {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.slider {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+}
+.slider img {
+    width: auto;
+    height: 100vh; /* 원하는 높이로 설정 */
+    margin:auto
+}
+.text {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+
+}
+.text .title {
+    padding: 10px;
+    width: 30%;
+}
+.text .title p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text .title p:last-child {
+    margin-top: 20px;
+}
+
+
+.text .desc {
+    line-height: 2;
+    padding: 5px 50px;
+}
+.back {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.back a {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.back a:hover {
+    color:white;
+    background: gray;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+    background: url('left-arrow.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+    background: url('right-arrow2.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}

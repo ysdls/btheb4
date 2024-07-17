@@ -1,0 +1,21 @@
+
+.detail-content .desc {
+    line-height: 2;
+}
+.link {
+    margin-top: 60px;
+}
+.link a{
+    text-decoration: none;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+.list-3 {
+    text-align: center;
+}
+.list-3 p {
+    font-size: 1.6rem;
+
+}

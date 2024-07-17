@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lounge.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- <div class="overlay"></div> -->
+
+        <div class="main">
+            <div class="video-background">
+                <img src="media-cube.jpg" alt="" />
+            </div>
+            <div class="section">
+                <div class="list-2">
+                    <!-- <a href="archive.html">종료된 이벤트 보러가기 →</a> -->
+                    <h1>종료된 이벤트</h1>
+                </div>
+                <hr />
+                <div class="container">
+                    <a href="event-detail.html" class="card-wapper">
+                        <div class="card">
+                            <img src="zzxc.png" class="event-img" alt="Event Image 1" />
+                            <div class="card-content">
+                                <div class="event-details">
+                                    <div><p>커뮤니케이션 라운지</p></div>
+                                    <div><span>2024.4.16 ~ 2024.4.28</span></div>
+                                </div>
+                                <div class="event-title">B the B x CHIC HOLIQUE EVENT🎁</div>
+                                <div class="event-description">인스타그램 인증시, 랜덤뽑기 기회 1회 제공</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event-detail.html" class="card-wapper">
+                        <div class="card">
+                            <img src="baba.png" class="event-img" alt="Event Image 1" />
+                            <div class="card-content">
+                                <div class="event-details">
+                                    <div><p>커뮤니케이션 라운지</p></div>
+                                    <div><span>2024.4.5 ~ 2024.4.6</span></div>
+                                </div>
+                                <div class="event-title">B the B x gesgep EVENT🎁</div>
+                                <div class="event-description">모바일 5만원 이상 구매시 퍼퓸드 핸드밤 본품 증정</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="page">
+                    <a href="">1</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+.video-background {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+
+}
+
+#video-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.video-background img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.video-background-text {
+    background: rgb(0 0 0 / 55%);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+}
+.video-background-text h1 {
+    font-size: 3rem;
+}
+.video-background-text p {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    width: 800px;
+    font-weight: bold;
+    line-height: 2;
+}
+.video-background-text button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: 0px;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.video-background-text button:hover {
+    background: gray;
+    cursor: pointer;
+}
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.section .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+
+.section .list-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.section .list-2 a {
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    margin: 0px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.section .list-2 .active {
+    background: black;
+    color: white;
+}
+.section .list-2 .select {
+    padding: 5px;
+}
+.section .list-2 a:hover {
+    background: black;
+    color: white;
+}
+.section .list a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: start;
+    margin-top: 40px;
+    gap:69px;
+    flex-wrap: wrap;
+}
+.card-wapper {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: calc(30% - 10px);
+    cursor: pointer;
+
+}
+.card-wapper:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.card {
+    background-color: white;
+    flex-shrink: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card .event-img {
+    object-position: top;
+    border-bottom: 1px solid black;
+}
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.event-details div {
+    display: flex;
+    align-items: center;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.event-description {
+    margin-top: 15px;
+}
+.event-action {
+    text-align: center;
+}
+.event-action button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.event-action button:hover {
+    background-color: #ddd;
+}
+.page {
+    text-align: center;
+    margin-top: 40px;
+}
+.page a {
+    color:black;
+}
+
+.container-detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.detail-content {
+    margin-top: 30px;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+.full-img {
+    width: 100%;
+}
+.back {
+    margin-top: 80px;
+    text-align: center;
+}
+.back a {
+    color: black;
+}
+.lounge-background {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+}
+.lounge-box {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.lounge-box .town {
+    font-size: 1rem;
+}
+.lounge-title {
+    font-size: 1.3rem;
+}
+.lounge-title span {
+    font-size: 1rem;
+}
+.lounge-content {
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+@media (max-width: 1024px) { 
+    .container {
+        gap: 10px;
+    }
+    .video-background {
+        height: 30vh;
+        background-color: black;
+    }
+    .section {
+        width: 100%;
+        padding: 80px 10px;
+    }
+    .card-wapper {
+        width:100%;
+
+    }
+}

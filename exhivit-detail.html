@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lounge.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- <div class="overlay"></div> -->
+
+        <div class="main">
+            <div class="video-background">
+                <img src="2310_4.jpg" alt="" />
+            </div>
+            <div class="section">
+                <div class="list-2">
+                    <h1>뉴로글로우: 내면에서부터 빛나는 아름다움</h1>
+                </div>
+                <hr />
+                <div class="container-detail">
+                    <div class="wapper">
+                        <img src="2405_1.jpg" class="full-img" alt="Event Image 1" />
+                        <div class="detail-content">
+                            <div>장소 : 브랜드 라운지<br />기간 : 2024.4.30 ~ 2024.6.30</div>
+                            <p>
+                                광활한 자연 속 거대한 숲을 모티브로 조성된 비더비 브랜드라운지는 서울을 대표하는 뷰티
+                                브랜드와 B the B의 협업 전시가 열리는 공간으로,
+                                <br /><br />
+                                스킨케어를 넘어 라이프스타일 뷰티를 제안하는 달바와 함께 합니다.
+                                <br /><br />
+                                이번 전시는 뉴로글로우라는 주제로 <br />
+                                외적인 아름다움뿐만 아니라, 내면에서부터 빛나는 아름다움을 추구하는 달바의 브랜드
+                                슬로건을 담았습니다. <br /><br />
+                                달바의 시그니처 성분인 화이트 트러플과 <br />
+                                비거너리의 메인 테이스트 샤인머스켓을 필두로 선보이는 <br />
+                                뷰티&헬시 아이템들로 '뉴로글로우' 라이프스타일을 경험해보세요.
+                            </p>
+                        </div>
+                        <div class="back">
+                            <a href="exhibitions.html">목록으로</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>

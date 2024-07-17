@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lounge.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- <div class="overlay"></div> -->
+
+        <div class="main">
+            <div class="video-background">
+                <!-- <video autoplay muted loop id="video-background-video">
+                    <source src="2023.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video> -->
+                <img src="comm/2403_2.jpg" alt="" />
+            </div>
+            <div class="section">
+                <div class="list-2">
+                    <a href="brand.html">브랜드 라운지</a>
+                    <a href="tech.html">테크 라운지</a>
+                    <a href="communication.html" class="active">커뮤니케이션 라운지</a>
+                    <!-- <a href="archive.html">이전 행사 보러가기 →</a> -->
+                </div>
+                <hr />
+                <div class="container">
+                    <a href="detail3.html" class="card-wapper">
+                        <div class="card">
+                            <img src="comm/2403_1.jpg" alt="Event Image 1" />
+                            <div class="card-content">
+                                <div class="event-details">
+                                    <div><p>행사기간</p></div>
+                                    <div><span>B the B Select</span></div>
+                                </div>
+                                <div class="event-title">B the B Select</div>
+                                <div class="event-description">
+                                    '비더비 셀렉’ 전시는 비더비만의 큐레이션으로 선정된 뷰티 제품들을 직접 체험해 볼 수
+                                    있는 공간입니다. 2024년 서울의 대표 색 ‘스카이코랄’과 뷰티를 콘셉트로 K-뷰티
+                                    대표거점의...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- <a href="detail.html" class="card-wapper">
+                        <div class="card">
+                            <img src="2403_2.jpg" alt="Event Image 1" />
+                            <div class="card-content">
+                                <div class="event-details">
+                                    <div><p>행사기간</p></div>
+                                    <div><span>2024.4.30 ~ 2024.6.30</span></div>
+                                </div>
+                                <div class="event-title">뉴로글로우: 내면에서부터 빛나는 아름다움</div>
+                                <div class="event-description">
+                                    달바의 시그니처 성분인 화이트 트러플과 비거너리의 메인 테이스트 샤인머스켓을 필두로
+                                    선보이는 뷰티&헬시 아이템들로 '뉴로글로우' 라이프스타일을 경험해보세요.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="detail.html" class="card-wapper">
+                        <div class="card">
+                            <img src="2403_1.jpg" alt="Event Image 1" />
+                            <div class="card-content">
+                                <div class="event-details">
+                                    <div><p>행사기간</p></div>
+                                    <div><span>2024.4.30 ~ 2024.6.30</span></div>
+                                </div>
+                                <div class="event-title">뉴로글로우: 내면에서부터 빛나는 아름다움</div>
+                                <div class="event-description">
+                                    달바의 시그니처 성분인 화이트 트러플과 비거너리의 메인 테이스트 샤인머스켓을 필두로
+                                    선보이는 뷰티&헬시 아이템들로 '뉴로글로우' 라이프스타일을 경험해보세요.
+                                </div>
+                            </div>
+                        </div>
+                    </a> -->
+                </div>
+
+                <div class="page">
+                    <a href="">1</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>
