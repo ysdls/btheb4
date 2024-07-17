@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+        <link rel="stylesheet" href="detail.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="main">
+            <div class="slider">
+                <div><img src="life/1.jpg" alt="Image 1" /></div>
+                <div><img src="life/2.jpg" alt="Image 1" /></div>
+                <div><img src="life/3.jpg" alt="Image 1" /></div>
+            </div>
+            <div class="text">
+                <div class="title">
+                    <p>LIFESTYLE LOUNGE</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="desc">
+                    <p></p>
+                </div>
+            </div>
+            <div class="back">
+                <a href="brand.html">돌아가기</a>
+                <!-- <a href="https://dalba.co.kr/" target="_blank">기업홈페이지 바로가기</a> -->
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>
