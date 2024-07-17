@@ -359,4 +359,25 @@
         font-size: 12px;
         padding: 5px;
     }
+    .slider {
+        height: 500px;
+    }
+    .section-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notice-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 1px #000;
+        padding: 30px;
+        margin-top: 20px;
+    }
+    .location-section {
+        width: 100%;
+        padding: 30px;
+        margin-top: 20px;
+    }
+    
 }

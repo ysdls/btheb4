@@ -89,38 +89,6 @@ h1, p, a {
 
 
 
-/* Media query for mobile view */
-@media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        padding: 30px;
-        background-color: white;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .hamburger {
-        display: block;
-        color: black;
-    }
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        left: 0;
-    }
-    .nav-menu .active {
-        display: flex;
-    }
-    .nav-menu li {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-}
 
 /* Underline for the active menu item */
 .nav-menu .active a {
@@ -134,51 +102,6 @@ h1, p, a {
     height: 100px;
 } */
 
-@media (max-width: 1024px) {
-    .hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
-    .open-header {
-        background-color: white;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: 1000;
-    }
-    
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #000;
-        top: 200px; /* Adjusted to the height of your header */
-        width: 100%;
-    }
-    .navbar > ul {
-        display: none;
-        left: 0px;
-    }
-
-    .nav-menu.open {
-        display: block;
-    }
-
-    .navbar > ul li {
-        text-align: left;
-        width: 100%;
-        padding: 10px 0;
-        margin: 0;
-    }
-
-    .navbar > ul li a {
-        position: relative;
-        left: 20px;
-    }
-
-     .block {
-        display: none;
-    }
-}
 #has-submenu {
     position: relative;
 }
@@ -223,12 +146,6 @@ h1, p, a {
     display: block;
 }
 
-/* Mobile Styles */
-@media (max-width: 1024px) {
-    #has-submenu .submenu {
-        position: relative;
-    }
-}
 
 .overlay {
     position: absolute;
@@ -332,7 +249,7 @@ h1, p, a {
 
 .visit-us {
     display: flex;
-
+    flex-direction: row;
 }
 
 .footer-section div {
@@ -383,4 +300,77 @@ h1, p, a {
 .footer .notice {
     text-align: right;
     width: 100%;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .hamburger {
+        display: block;
+        color: black;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    .nav-menu .active {
+        display: flex;
+    }
+    .nav-menu li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .open-header {
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        top: -85px;
+    }
+    
+    .navbar > ul {
+        display: none;
+        left: 0px;
+    }
+
+    .nav-menu.open {
+        display: block;
+    }
+
+    .navbar > ul li {
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .navbar > ul li a {
+        position: relative;
+        left: 20px;
+    }
+
+     .block {
+        display: none;
+    }
+    #has-submenu .submenu {
+        position: relative;
+    }
+    .visit-us {
+        flex-direction: column;
+    }
 }
