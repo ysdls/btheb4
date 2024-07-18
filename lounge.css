@@ -8,6 +8,15 @@
     color: white;
 
 }
+.video-background1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+
+}
 
 #video-background-video {
     position: absolute;
@@ -69,7 +78,7 @@
 }
 .section .list {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 20px;
     font-size: 1.4rem;
@@ -224,6 +233,19 @@
     color: white;
     background-color: black;
 }
+.space-box p {
+    font-weight: 300;
+}
+.space-box .space-image {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+
+}
+.space-box .space-image img {
+    width: 100%;
+}
+
 .lounge-box {
     display: flex;
     flex-direction: column;
