@@ -38,6 +38,8 @@ h1, p, a {
     justify-content: center;
     margin: 20px 0 0 0;
     padding: 0;
+    position: relative;
+    right: 11px;
 }
 
 .nav-menu li {
