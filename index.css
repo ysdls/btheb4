@@ -277,6 +277,10 @@
     padding: 80px 0px 0px 0px;
     margin-top: 20px;
 }
+.notice-location {
+    width: 80%;
+    margin: 0 auto;
+}
 .location-section {
     width: 50%;
     padding: 80px 0px 0px 80px;
