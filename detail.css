@@ -55,6 +55,19 @@
     color:white;
     background: gray;
 }
+.back button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.back button:hover {
+    color:white;
+    background: gray;
+}
 .slick-prev {
     left: 25px !important;
     z-index: 1;
