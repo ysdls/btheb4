@@ -283,7 +283,7 @@
 }
 .location-section {
     width: 50%;
-    padding: 80px 0px 0px 80px;
+    padding: 80px 0px 0px 60px;
     margin-top: 20px;
 }
 .notice-section div , .location-section div {
@@ -292,11 +292,13 @@
 .box-title {
     margin-bottom: 15px;
 }
-.box-content span:first-child {
+.box-content .op-time {
     font-weight: 700;
     margin-right: 20px;
+    display: inline-block;
+    width: 60px;
 }
-.box-content span:last-child {
+.box-content .op-text {
     font-weight: 300;
 }
 @keyframes slideUp {

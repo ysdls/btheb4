@@ -29,48 +29,107 @@
         <!-- <div class="overlay"></div> -->
 
         <div class="main">
-            <div class="video-background1">
-                <!-- <video autoplay muted loop id="video-background-video">
+            <div class="video-background">
+                <video autoplay muted loop id="video-background-video">
                     <source src="2023.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
-                </video> -->
-                <!-- <div class="lounge-box">
-                    <div class="lounge-title">
-                        <div>업타운</div>
-                        <div class="town">UPTOWN</div>
-                    </div>
-                    <div class="lounge-content">
-                        <p>
-                            서울의 매력적인 뷰티브랜드를 B the B만의 감각으로 큐레이팅한상설 전시를 선보입니다. 나만의
-                            피부를 진단하고 맞춤형 화장품을 추천, 온라인 서비스로 받아보는 B the B만의 뷰티아이템을
-                            체험하며 즐겨보세요.
-                            <br /><br />
-                            We present a permanent exhibition curating Seoul's attractive beauty brand with B the B's
-                            own sense.Diagnose your own skin and recommend customized cosmetics, Experience and enjoy B
-                            the B's own beauty items received through online services.
-                        </p>
-                    </div>
-                </div> -->
+                </video>
             </div>
             <div class="section">
                 <div class="list">
-                    <p>공간소개글</p>
-                    <!-- <a href="lounge.html">UPTOWN</a>
-                    <a href="downtown.html">DOWNTOWN</a> -->
-                    <!-- <a href="brand.html">이전 행사 보러가기 →</a> -->
+                    <p id="show-lounge">LOUNGE</p>
+                    <p id="show-uptown">UPTOWN</p>
+                    <p id="show-downtown">DOWNTOWN</p>
                 </div>
                 <hr />
                 <div class="container">
-                    <div class="space-box">
-                        <p>
-                            B the B는 일상 속에서 도심 속 휴식처가 되어주는 뷰티 복합문화 공간입니다. <br />서울의
-                            중심지이자 건축가가 만든 건축물과 문화유산이 있는 이 곳에서 색다른 뷰티를 만나보실 수
-                            있습니다.
-                        </p>
+                    <div class="lounge-box lounge-content">
+                        <div class="lounge-title">
+                            <div>라운지</div>
+                            <div class="town">LOUNGE</div>
+                        </div>
+                        <div class="lounge-desc">
+                            <p>
+                                B the B는 일상 속에서 도심 속 휴식처가 되어주는 뷰티 복합문화 공간입니다. <br />나를
+                                분석하고 나에게 어울리는 뷰티 제품을 체험하고 구매 할 수 있는 B the B에서 아름다운
+                                시간을 보내세요.
+                            </p>
+                        </div>
                         <div class="space-image">
                             <img src="town.png" />
                         </div>
                     </div>
+
+                    <div class="lounge-box uptown-content" style="display: none">
+                        <div class="lounge-title">
+                            <div>업타운</div>
+                            <div class="town">UPTOWN</div>
+                        </div>
+                        <div class="lounge-desc">
+                            <p>
+                                <b>MAKE-UP YOUR MIND</b><br /><br />
+                                ‘마음을 정해요’라는 의미와 함께 ‘당신의 마음을 아름답게 꾸미다’라는 의미를 가진 B the
+                                B에서 아름다운 하루를 만드세요.<br />
+                                테크기기를 기반으로 나만의 피부를 진단하고 맞춤형 화장품을 추천, 온라인 구매 서비스로
+                                받아보는 B the B 만의 뷰티 아이템을 체험하며 즐겨보세요.<br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lounge-box downtown-content" style="display: none">
+                        <div class="lounge-title">
+                            <div>다운타운</div>
+                            <div class="town">DOWNTOWN</div>
+                        </div>
+                        <div class="lounge-desc">
+                            <p>
+                                서울의 뷰티 트렌드를 선도하는 인기 브랜드와 최신 트렌드가 결합한 이색 콜라보레이션
+                                팝업을 선보입니다.<br />
+                                테크기기를 기반으로 나만의 피부를 진단하고 맞춤형 화장품을 추천, 온라인 구매 서비스로
+                                받아보는 B the B 만의 뷰티 아이템을 체험하며 즐겨보세요.
+                                <!-- _________________________________________________________<br />
+                                Welcome to CURE LAND│해피한 여름 햇빛 투게더 <br />자연은 우리에게, 우리는 자연에게
+                                알로에의 힘으로 완성한 건강한 스킨케어 브랜드, CURE 청정 제주의 자연을 담은 도심 속 힐링
+                                테마파크를 이 곳에서 경험해보세요.<br />
+                                해피한 여름, 크크롱과 함께 하는 CURE LAND에 오신걸 환영합니다.<br /> -->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                        <div class="image-wrapper uptown-content" style="display: none">
+                            <div class="overlay-wapper"></div>
+                            <!-- <div class="title">
+                                <p>BRAND LOUNGE</p>
+                                <p>브랜드 라운지</p>
+                            </div> -->
+                            <a href="detail16.html">
+                                <img src="brand/updown7.jpeg" alt="Image 1" class="image" />
+                                <div class="overlay">
+                                    <div class="text">
+                                        <!-- <p>BRAND LOUNGE</p>
+                                        <p>브랜드 라운지</p> -->
+                                        <p>
+                                            컬러풀 뷰티 시티│Colorful Beauty City<br />
+                                            서울 시민들이 사랑하는 해질녘 한강 노을빛.<br />
+                                            사랑스러운 빛으로 물든 도시의 이미지를 공간 속에 담았습니다.<br />
+                                            코랄빛으로 채워진 이곳에서 뷰티 라이프를 통해 시민 한 명, 한 명의 일상이
+                                            더욱 빛날 수 있기를 기대합니다.<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="space-box">
+                        <p>
+                            B the B는 일상 속에서 도심 속 휴식처가 되어주는 뷰티 복합문화 공간입니다. <br />나를
+                            분석하고 나에게 어울리는 뷰티 제품을 체험하고 구매 할 수 있는 B the B에서 아름다운 시간을
+                            보내세요.
+                        </p>
+                        <div class="space-image">
+                            <img src="town.png" />
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -92,6 +151,32 @@
                     autoplay: true,
                     autoplaySpeed: 2000,
                 });
+            });
+            var activeTab = sessionStorage.getItem("activeTab");
+            if (activeTab) {
+                $(".image-wrapper").hide();
+                $(".lounge-box").hide();
+                $("." + activeTab + "-content").show();
+            }
+            $("#show-lounge").click(function () {
+                sessionStorage.clear();
+                $(".image-wrapper").hide();
+                $(".lounge-box").hide();
+                $(".lounge-content").show();
+            });
+
+            $("#show-uptown").click(function () {
+                sessionStorage.clear();
+                $(".image-wrapper").hide();
+                $(".lounge-box").hide();
+                $(".uptown-content").show();
+            });
+
+            $("#show-downtown").click(function () {
+                sessionStorage.clear();
+                $(".image-wrapper").hide();
+                $(".lounge-box").hide();
+                $(".downtown-content").show();
             });
         </script>
         <!-- <script src="script.js"></script> -->

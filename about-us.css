@@ -141,6 +141,7 @@
 .section .content .section-text {
     font-size: 1.6rem;
     color:white;
+    margin-top: 15px;
 }
 .section .content .section-title {
     font-size: 7rem;
