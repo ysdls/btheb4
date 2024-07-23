@@ -68,11 +68,16 @@
                         </div>
                         <div class="lounge-desc">
                             <p>
-                                <b>MAKE-UP YOUR MIND</b><br /><br />
-                                ‘마음을 정해요’라는 의미와 함께 ‘당신의 마음을 아름답게 꾸미다’라는 의미를 가진 B the
-                                B에서 아름다운 하루를 만드세요.<br />
-                                테크기기를 기반으로 나만의 피부를 진단하고 맞춤형 화장품을 추천, 온라인 구매 서비스로
-                                받아보는 B the B 만의 뷰티 아이템을 체험하며 즐겨보세요.<br />
+                                서울의 매력적인 뷰티 브랜드를 B the B만의 감각으로 큐레이팅한 상설 전시를 선보입니다.<br />
+                                나만의 피부를 진단하고 맞춤형 화장품을 추천, 온라인 구매 서비스로 받아보는 B the B만의
+                                뷰티 아이템을 체험하여 즐겨보세요.
+                            </p>
+                            <br />
+                            <p>
+                                We present a permanent exhibition curated with B the B's unique sensibility, featuring
+                                the most charming beauty brands in Seoul. <br />Experience personalized skin
+                                diagnostics, receive customized cosmetics recommendations,<br />
+                                and enjoy B the B's beauty items through our online purchase service.
                             </p>
                         </div>
                     </div>
@@ -93,44 +98,31 @@
                                 테마파크를 이 곳에서 경험해보세요.<br />
                                 해피한 여름, 크크롱과 함께 하는 CURE LAND에 오신걸 환영합니다.<br /> -->
                             </p>
+                            <br />
+                            <p>
+                                We present an innovative pop-up featuring unique collaborations between popular brands
+                                that lead Seoul's beauty trends and the latest trends.
+                            </p>
                         </div>
                     </div>
 
                     <div class="image-container">
                         <div class="image-wrapper uptown-content" style="display: none">
-                            <div class="overlay-wapper"></div>
-                            <!-- <div class="title">
-                                <p>BRAND LOUNGE</p>
-                                <p>브랜드 라운지</p>
-                            </div> -->
                             <a href="detail16.html">
                                 <img src="brand/updown7.jpeg" alt="Image 1" class="image" />
                                 <div class="overlay">
                                     <div class="text">
-                                        <!-- <p>BRAND LOUNGE</p>
-                                        <p>브랜드 라운지</p> -->
                                         <p>
-                                            컬러풀 뷰티 시티│Colorful Beauty City<br />
                                             서울 시민들이 사랑하는 해질녘 한강 노을빛.<br />
                                             사랑스러운 빛으로 물든 도시의 이미지를 공간 속에 담았습니다.<br />
                                             코랄빛으로 채워진 이곳에서 뷰티 라이프를 통해 시민 한 명, 한 명의 일상이
-                                            더욱 빛날 수 있기를 기대합니다.<br />
+                                            더욱 빛날 수 있기를 기대합니다.
                                         </p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="space-box">
-                        <p>
-                            B the B는 일상 속에서 도심 속 휴식처가 되어주는 뷰티 복합문화 공간입니다. <br />나를
-                            분석하고 나에게 어울리는 뷰티 제품을 체험하고 구매 할 수 있는 B the B에서 아름다운 시간을
-                            보내세요.
-                        </p>
-                        <div class="space-image">
-                            <img src="town.png" />
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -153,20 +145,21 @@
                     autoplaySpeed: 2000,
                 });
                 var activeTab = sessionStorage.getItem("activeTab");
+                console.log(activeTab);
                 if (activeTab) {
                     $(".image-wrapper").hide();
                     $(".lounge-box").hide();
                     $("." + activeTab + "-content").show();
-                    $("#" + activeTab).addClass("active");
+                    $("#show-" + activeTab).addClass("active");
                 } else {
                     // Default active tab
                     $("#show-lounge").addClass("active");
                 }
 
                 // Default content display
-                $(".image-wrapper").hide();
-                $(".lounge-box").hide();
-                $(".lounge-content").show();
+                // $(".image-wrapper").hide();
+                // $(".lounge-box").hide();
+                // $(".lounge-content").show();
             });
 
             $("#show-lounge").click(function () {
