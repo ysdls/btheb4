@@ -151,18 +151,29 @@
                     autoplay: true,
                     autoplaySpeed: 2000,
                 });
-            });
-            var activeTab = sessionStorage.getItem("activeTab");
-            if (activeTab) {
+                var activeTab = sessionStorage.getItem("activeTab");
+                if (activeTab) {
+                    $(".image-wrapper").hide();
+                    $(".lounge-box").hide();
+                    $("." + activeTab + "-content").show();
+                    $("#" + activeTab).addClass("active");
+                } else {
+                    // Default active tab
+                    $("#show-lounge").addClass("active");
+                }
+
+                // Default content display
                 $(".image-wrapper").hide();
                 $(".lounge-box").hide();
-                $("." + activeTab + "-content").show();
-            }
+                $(".lounge-content").show();
+            });
+
             $("#show-lounge").click(function () {
                 sessionStorage.clear();
                 $(".image-wrapper").hide();
                 $(".lounge-box").hide();
                 $(".lounge-content").show();
+                setActiveTab(this);
             });
 
             $("#show-uptown").click(function () {
@@ -170,6 +181,7 @@
                 $(".image-wrapper").hide();
                 $(".lounge-box").hide();
                 $(".uptown-content").show();
+                setActiveTab(this);
             });
 
             $("#show-downtown").click(function () {
@@ -177,7 +189,12 @@
                 $(".image-wrapper").hide();
                 $(".lounge-box").hide();
                 $(".downtown-content").show();
+                setActiveTab(this);
             });
+            function setActiveTab(element) {
+                $(".list p").removeClass("active");
+                $(element).addClass("active");
+            }
         </script>
         <!-- <script src="script.js"></script> -->
     </body>

@@ -33,16 +33,21 @@
                 <img src="brand/2405_3.jpg" alt="" />
             </div> -->
             <div class="section">
-                <div class="list-2">
-                    <div></div>
+                <div class="list-3">
+                    <div class="empty"></div>
                     <div>B the B Archive</div>
                     <!-- <a href="brand.html" class="active">브랜드 라운지</a> -->
                     <!-- <a href="archive.html">이전 행사 보러가기 →</a> -->
-                    <select name="" class="select" id="year-select">
+                    <!-- <select name="" class="select" id="year-select">
                         <option value="brand">2024</option>
                         <option value="2023">2023</option>
                         <option value="2022">2022</option>
-                    </select>
+                    </select> -->
+                    <div>
+                        <a href="brand.html" class="link">2024</a>
+                        <a href="2023.html" class="link">2023</a>
+                        <a href="2022.html" class="link">2022</a>
+                    </div>
                 </div>
                 <hr />
                 <div class="container">
@@ -186,16 +191,25 @@
                     autoplaySpeed: 2000,
                 });
             });
-            document.getElementById("year-select").addEventListener("change", function () {
-                var selectedYear = this.value;
-                window.location.href = `${selectedYear}.html`;
-            });
-            window.addEventListener("load", function () {
-                var currentYear = window.location.pathname.split("/").pop();
-                console.log(currentYear);
-                var year = currentYear.split(".html");
-                var selectElement = document.getElementById("year-select");
-                selectElement.value = year[0];
+            // document.getElementById("year-select").addEventListener("change", function () {
+            //     var selectedYear = this.value;
+            //     window.location.href = `${selectedYear}.html`;
+            // });
+            // window.addEventListener("load", function () {
+            //     var currentYear = window.location.pathname.split("/").pop();
+            //     console.log(currentYear);
+            //     var year = currentYear.split(".html");
+            //     var selectElement = document.getElementById("year-select");
+            //     selectElement.value = year[0];
+            // });
+            // 현재 페이지 URL에서 마지막 부분을 추출
+            const currentPath = window.location.pathname.split("/").pop();
+            // 링크를 모두 가져와서 반복
+            const links = document.querySelectorAll(".link");
+            links.forEach((link) => {
+                if (link.getAttribute("href") === currentPath) {
+                    link.classList.add("active");
+                }
             });
         </script>
     </body>

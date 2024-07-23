@@ -33,16 +33,21 @@
                 <img src="brand/2405_3.jpg" alt="" />
             </div> -->
             <div class="section">
-                <div class="list-2">
-                    <div></div>
+                <div class="list-3">
+                    <div class="empty"></div>
                     <div>B the B Archive</div>
                     <!-- <a href="brand.html" class="active">브랜드 라운지</a> -->
                     <!-- <a href="archive.html">이전 행사 보러가기 →</a> -->
-                    <select name="" class="select" id="year-select">
+                    <!-- <select name="" class="select" id="year-select">
                         <option value="brand">2024</option>
                         <option value="2023">2023</option>
                         <option value="2022">2022</option>
-                    </select>
+                    </select> -->
+                    <div>
+                        <a href="brand.html" class="link">2024</a>
+                        <a href="2023.html" class="link">2023</a>
+                        <a href="2022.html" class="link">2022</a>
+                    </div>
                 </div>
                 <hr />
                 <div class="container">
@@ -55,39 +60,6 @@
                                     <div><span></span></div>
                                 </div>
                                 <div class="event-title">안다르 ‘서울을 걷다’</div>
-                                <!-- <div class="event-description">안다르 ‘서울을 걷다’ 기획전</div> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detail17.html" class="card-wapper">
-                        <div class="card">
-                            <img src="brand/1.jpg" alt="Event Image 1" />
-                            <div class="card-content">
-                                <div class="event-details">
-                                    <div><p>라이프스타일 라운지</p></div>
-                                    <div><span></span></div>
-                                </div>
-                                <div class="event-title"></div>
-                                <!-- <div class="event-description">
-                                    싱그러운 들판 속 자연의 소재를 통한 하이퍼리얼리즘을 모티브로 조성된 공간에서 서울의
-                                    라피스타일 트렌드에 맞춰 시즌별로 큐레이션된 제품을 만나보세요.
-                                </div> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a href="detail18.html" class="card-wapper">
-                        <div class="card">
-                            <img src="brand/2.jpg" alt="Event Image 1" />
-                            <div class="card-content">
-                                <div class="event-details">
-                                    <div><p>커뮤니케이션라운지</p></div>
-                                    <div><span></span></div>
-                                </div>
-                                <div class="event-title"></div>
-                                <!-- <div class="event-description">
-                                    숲 속 휴양림을 연상하는 힐링 공간을 모티브로 조성된 공간에서 다양한 뷰티 체험
-                                    프로그램과 이벤트를 만나보세요.
-                                </div> -->
                             </div>
                         </div>
                     </a>
@@ -112,16 +84,25 @@
                     autoplaySpeed: 2000,
                 });
             });
-            document.getElementById("year-select").addEventListener("change", function () {
-                var selectedYear = this.value;
-                window.location.href = `${selectedYear}.html`;
-            });
-            window.addEventListener("load", function () {
-                var currentYear = window.location.pathname.split("/").pop();
-                console.log(currentYear);
-                var year = currentYear.split(".html");
-                var selectElement = document.getElementById("year-select");
-                selectElement.value = year[0];
+            // document.getElementById("year-select").addEventListener("change", function () {
+            //     var selectedYear = this.value;
+            //     window.location.href = `${selectedYear}.html`;
+            // });
+            // window.addEventListener("load", function () {
+            //     var currentYear = window.location.pathname.split("/").pop();
+            //     console.log(currentYear);
+            //     var year = currentYear.split(".html");
+            //     var selectElement = document.getElementById("year-select");
+            //     selectElement.value = year[0];
+            // });
+            // 현재 페이지 URL에서 마지막 부분을 추출
+            const currentPath = window.location.pathname.split("/").pop();
+            // 링크를 모두 가져와서 반복
+            const links = document.querySelectorAll(".link");
+            links.forEach((link) => {
+                if (link.getAttribute("href") === currentPath) {
+                    link.classList.add("active");
+                }
             });
         </script>
     </body>
